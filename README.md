@@ -1,4 +1,4 @@
-# AgenticAI - Agentic Development Lifecycle
+# Agentic AI - Agentic Development Lifecycle (ADLC)
 Securing AI agents across every phase of the development lifecycle.
 AI agents don’t just generate text anymore. They read untrusted content, call tools, access real data, and take actions on their own. Traditional SDLC security practices weren’t built for systems that are non-deterministic and can be steered by a cleverly worded email or web page.
 
