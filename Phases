@@ -1,0 +1,8 @@
+Scope: Define the agent’s purpose, autonomy level, tools, data access, and risk tier.
+Threat model: Map trust boundaries and identify threats like prompt injection, tool misuse, and data exfiltration.
+Design: Apply least-privilege tool access, human approval for high-impact actions, and sandboxing.
+Build: Version prompts and configs as code, validate tool inputs and outputs, and vet third-party components.
+Test: Run capability and safety evals, plus red teaming for injection, jailbreaks, and misuse.
+Deploy: Roll out in stages with rate limits, a kill switch, and release gates tied to eval results.
+Monitor: Trace every tool call and decision, alert on anomalies, and respond with agent-specific playbooks.
+Iterate and retire: Feed incidents back into the threat model, re-test on model changes, and revoke access when retiring.
