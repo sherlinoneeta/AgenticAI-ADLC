@@ -1,0 +1,10 @@
+Start from scope: Pull the charter, tool inventory, data sources, and risk tier as inputs.
+Draw the data flow: Map users, agent, model, tools, knowledge sources, memory, and external systems.
+Mark trust boundaries: Flag every point where untrusted content enters (web, email, files, tool outputs, other agents).
+Trace action paths: For each untrusted input, trace which tools and data it could reach.
+Enumerate threats: Cover prompt injection (direct and indirect), tool misuse, excessive permissions, data exfiltration, memory poisoning, unsafe output handling, runaway loops, and supply chain risks.
+Map to frameworks: Tag threats with OWASP LLM Top 10, OWASP agentic threats, and MITRE ATLAS IDs.
+Rate risk: Score likelihood and impact; prioritize paths ending in irreversible or external actions.
+Assign controls: Map each threat to a mitigation (least privilege, approval gate, input isolation, output validation, rate limits).
+Define test cases: Turn each high-risk threat into an attack scenario for the Test phase.
+Record and gate: Commit threat-model.md with diagram and threat register; require AppSec sign-off before Design.
