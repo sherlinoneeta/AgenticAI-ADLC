@@ -1,0 +1,10 @@
+Intake: Require a registration request before any agent is created in a production environment.
+Environment strategy: Separate dev, test, and production environments; restrict who can create agents in each.
+Templates: Standard charter covering purpose, knowledge sources, connectors, actions, channels, and authentication.
+Tiering rubric: Tier by connectors used, data sensitivity, autonomous triggers, and external channels (public website vs. Teams-only).
+Data policies: Apply DLP policies per environment to block or allow connectors by tier.
+Roles: Named maker, business owner, AppSec reviewer, and approver per agent.
+Inventory: Track every agent, environment, connector, knowledge source, and maker in a central registry, using the Power Platform admin center’s inventory views as the source.
+Review: Check authentication settings, connector permissions, sharing scope, and untrusted knowledge sources (public websites, uploaded files).
+Exit gate: Block promotion to production via managed environments and solution-based deployment until scope is approved.
+Metrics: Track registered vs. discovered agents, unapproved connectors, and approval time.
